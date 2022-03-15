@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    /*Pongo flex para alinear en el centro el contenido*/
+    display: flex;
+    justify-content: center;
+}
+nav{
+    border: 1px solid red;
+    background-color: rgb(176, 210, 240);
+    width: 1200px;
+}
+nav ul{
+    border: 1px solid red;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+nav li{
+    background-color: rgba(155, 127, 182, 0.808);
+    border: 1px solid red;
+    height: 40px;
+    width: 200px;
+    margin: 30px;  /*Separación entre cajas*/
+    list-style: none;
+    flex-grow: 1;
+}
