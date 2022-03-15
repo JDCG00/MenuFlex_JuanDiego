@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: center;
 }
+/*Caja contenedora*/
 nav{
     border: 1px solid red;
     background-color: rgb(176, 210, 240);
@@ -16,16 +17,28 @@ nav{
 nav ul{
     border: 1px solid red;
     height: 100px;
-    display: flex;
+    display: flex;   /*Se hace a la caja contenedora flexible*/
     align-items: center;
     width: 100%;
 }
+/*Cajas*/
 nav li{
     background-color: rgba(155, 127, 182, 0.808);
     border: 1px solid red;
     height: 40px;
-    width: 200px;
+    width: 300px; /*Anchura para probar el flex grow*/
+    /* width: 600px;*/  /*Anchura para probar el flex shrink */
     margin: 30px;  /*Separación entre cajas*/
     list-style: none;
-    flex-grow: 1;
+    flex-grow: 1;         /*El flex grow especifica cuánto crecerá el elemento en relación con el resto de los elementos flexibles dentro del mismo contenedor.*/
+    /* flex-grow: 0; */
+    /* flex-shrink: 1; */ /*El flex shrink especifica cómo se encogerá el elemento en relación con el resto de los elementos flexibles dentro del mismo contenedor.*/
+    /* flex-shrink: 0; */
+}
+/*Esto es simplemente para que el enlace ocupe el 100% de la caja y al pulsar en la caja, esta funcione redirija a su destino*/
+a{
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 }
